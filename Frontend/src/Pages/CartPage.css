@@ -1,0 +1,67 @@
+
+
+.page {
+  transition: 0.3s;
+}
+
+.title {
+  letter-spacing: 0.5px;
+}
+
+.item {
+  transition: 0.2s;
+}
+
+.item:hover {
+  background: #f9fafb;
+}
+
+.avatar {
+  font-family: serif;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background: #f3f4f6;
+}
+
+.remove {
+  color: #9ca3af;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remove:hover {
+  color: red;
+}
+
+.box {
+  transition: 0.3s;
+}
+
+.btn {
+  background: #059669 !important;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white !important;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #047857;
+}
