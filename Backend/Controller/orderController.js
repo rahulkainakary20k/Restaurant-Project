@@ -45,7 +45,7 @@ exports.updateOrder = async (req, res) => {
   try {
     const { user, items } = req.body
     if (!user || !items) {
-      return res.status(400).json({  success: false,  message: "User and items are required for full update"
+      return res.status(400).json({  success: false,  message: "User and items are required for fully update"
       })  }
      const totalPrice = items.reduce((total, item) => {
       return total + item.price * item.quantity
