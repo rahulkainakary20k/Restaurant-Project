@@ -58,7 +58,7 @@ exports.updateOrder = async (req, res) => {
       return res.status(404).json({success:false,
      message: "Order not found"  })}
 
-    res.status(200).json({ success: true, message: "Order fully updated successfully",
+    res.status(200).json({ success: true, message: "Order fully updated Successfully",
       data: order })
 
   } catch (error) {
