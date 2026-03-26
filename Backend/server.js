@@ -20,10 +20,13 @@ app.use ('/api/menu',menuRouter)
 app.use ('/api/orders',orderRouter)
 app.use ('/api/bills',billRouter)
 app.use("/api/pay", payRouter)
+
+// in using to render platform in live deploy stage 
  app.get ('/',(req,res)=> {
     res.send ( "Back-end side is Running...!!!" )
  })
 
+ 
 const mongoURL = process.env.MONGO_URL
 console.log('Connecting to MongoDB at', mongoURL)
 
