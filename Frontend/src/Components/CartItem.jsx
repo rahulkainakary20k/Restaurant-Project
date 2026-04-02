@@ -12,8 +12,7 @@ const CartItem = ({ item, updateQuantity, removeFromCart }) => {
 
         <button
           onClick={() => updateQuantity(item._id, item.quantity - 1)}
-          className="px-3 py-1 bg-gray-200 rounded"
-        >
+          className="px-3 py-1 bg-gray-200 rounded">
           -
         </button>
 
@@ -21,8 +20,7 @@ const CartItem = ({ item, updateQuantity, removeFromCart }) => {
 
         <button
           onClick={() => updateQuantity(item._id, item.quantity + 1)}
-          className="px-3 py-1 bg-gray-200 rounded"
-        >
+          className="px-3 py-1 bg-gray-200 rounded" >
           +
         </button>
 
@@ -36,15 +34,14 @@ const CartItem = ({ item, updateQuantity, removeFromCart }) => {
 
         <button
           onClick={() => removeFromCart(item._id)}
-          className="text-red-500"
-        >
+          className="text-red-500"  >
           Remove
         </button>
 
       </div>
 
     </div>
-  );
-};
+  )
+}
 
 export default CartItem
