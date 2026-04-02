@@ -43,6 +43,7 @@ const CartPage = () => {
      try {
      const orderItems = cartItems.map(item => ({name: item.name,
       price: item.price,quantity: item.quantity }))
+// axios.post("https://your-backend.onrender.com/api/pay/create-payment")
 
     const response = await axios.post("http://localhost:7000/api/orders",
        {user: currentUser.uid,items: orderItems,totalPrice:cartTotal})
@@ -101,15 +102,11 @@ const CartPage = () => {
        className="btn w-full py-4 rounded-md font-bold text-lg text-white bg-emerald-600 hover:bg-emerald-700">
             {isCheckingOut ? "Processing..." : "Place Order"}
               </button>
-
+              
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
   )
 }
