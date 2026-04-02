@@ -31,7 +31,8 @@ const MenuPage = () => {
     useEffect(() => {
         const fetchMenu = async () => {
  try {
-   const res = await axios.get('http://localhost:7000/api/menu')
+  //  const res = await axios.get('http://localhost:7000/api/menu')
+   const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/menu`)
     setMenuItems(res.data)
       } catch (error) {
        console.error("Error fetching menu:", error)
